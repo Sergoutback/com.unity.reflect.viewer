@@ -5,21 +5,23 @@ using UnityEngine.UI;
 
 public class TestUiLayers : MonoBehaviour
 {
-    [SerializeField] private GameObject layersPanel;
+    [SerializeField] private GameObject layerPanel;
 
-    [SerializeField] private string _layersName;
+    [SerializeField] private string _layerName;
 
     private bool _checkbox;
+
+    private Dictionary<string, bool> _layerDictionary;
 
 
 
     void Start()
     {
-        LayersStart(_layersName, _checkbox);
+        LayerStart(_layerName, _checkbox);
     }
 
-    public void LayersStart(string _infoTestUIText, bool _checkbox)
+    public void LayerStart(string _layersName, bool _checkbox)
     {
-        Dictionary<string, bool> layerDictionary = new Dictionary<string, bool>();
+        _layerDictionary = new Dictionary<string, bool>();
     }
 }

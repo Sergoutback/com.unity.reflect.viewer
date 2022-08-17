@@ -3804,6 +3804,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2274140442212732320, guid: 008d43be80a2fce47912355248c02ac0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2275886101309109545, guid: 008d43be80a2fce47912355248c02ac0,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -12879,8 +12884,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d470f738dad8f042ae880e68c405498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layersPanel: {fileID: 984560544}
-  _layersName: 
+  layerPanel: {fileID: 984560544}
+  _layerName: 
 --- !u!1 &1119551737
 GameObject:
   m_ObjectHideFlags: 0
