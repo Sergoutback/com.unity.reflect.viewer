@@ -20,8 +20,6 @@ public class TestUiInfo : MonoBehaviour
 
     void Start()
     {
-        //infoPanel.SetActive(true);
-        
         TextStart(_infoTestUIText, _descriptionTestUIText);
     }
 
