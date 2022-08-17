@@ -1,48 +1,44 @@
-using System;
-using System.Collections;
-using SharpFlux.Dispatching;
-using Unity.TouchFramework;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.Reflect.Viewer.Core.Actions;
 using UnityEngine.UI;
 
 public class TestUiInfo : MonoBehaviour
 {
-    [SerializeField] private Text infoTestUIText;
-    [SerializeField] private Text descriptionTestUIText;
-    [SerializeField] private Button cancel_Button;
+    [SerializeField] private GameObject infoPanel;
 
-    public event Action buttonClicked;
-    public event Action buttonLongPressed;
+    [SerializeField] private Text infoTestUIText;
+
+    [SerializeField] private Text descriptionTestUIText;
+
+    [SerializeField] private Button cancel_Button;
+    
 
     private string _infoTestUIText;
+
     private string _descriptionTestUIText;
+
+
 
     void Start()
     {
-        cancel_Button.onClick.AddListener(OnButtonClicked);
+        //infoPanel.SetActive(true);
+        
+        TextStart(_infoTestUIText, _descriptionTestUIText);
     }
 
-    public void TextStart()
+    public void TextStart(string _infoTestUIText, string _descriptionTestUIText)
     {
         infoTestUIText.text = _infoTestUIText;
+
         descriptionTestUIText.text = _descriptionTestUIText;
     }
 
     public void CancelButton()
     {
-
+        infoPanel.SetActive(false);
     }
 
-    void OnButtonClicked()
+    public void ActivateInfoPanel()
     {
-        if (!cancel_Button)
-        {
-            Dispatcher.Dispatch(SetDeltaDNAButtonAction.From($"{transform.parent.name}_{transform.name}"));
-            buttonClicked?.Invoke();
-        }
+        infoPanel.SetActive(true);
     }
-
-
 }
