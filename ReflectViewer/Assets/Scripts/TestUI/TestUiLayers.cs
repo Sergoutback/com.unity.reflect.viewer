@@ -17,14 +17,17 @@ public class TestUiLayers : MonoBehaviour
     {
         _layerDictionaryList = new List<Dictionary<bool, string>>(10);
 
-        //layerDictionary = TestInitLayer.layerDictionary;
-
-        //_layerDictionaryList.Add(layerDictionary);
-
-        //InstantiateLayer();
     }
 
-    
+    void AddNewLayer()
+    {
 
+        for (int i = 0; i < 10; i++)
 
+        {
+            if (newlayer)
+
+                _layerDictionaryList.Add(_layerDictionary);
+        }
+    }
 }

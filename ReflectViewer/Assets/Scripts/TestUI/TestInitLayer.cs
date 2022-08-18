@@ -12,9 +12,9 @@ public class TestInitLayer : MonoBehaviour
 
     public Dictionary<bool, string> layerDictionary;
 
-    public string LayerName;
+    //public string LayerName;
 
-    public bool Checkbox;
+    //public bool Checkbox;
 
 
 
@@ -22,17 +22,20 @@ public class TestInitLayer : MonoBehaviour
 
     void LayerStartTest()
     {
-        LayerStart(true, "TestLayer1");
+        for(int i = 0; i < 5; i++)
+        {
+            LayerStart(true, "TestLayer1");
 
-        Debug.Log("LayerStartTest");
+            Debug.Log("LayerStartTest");
+        }
     }
 
 
     void Start()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 10; i++)
 
-            InstantiateLayer();
+            LayerStart(_checkbox, _layerName);
     }
 
 
@@ -40,20 +43,14 @@ public class TestInitLayer : MonoBehaviour
     {
         if (_checkbox)
 
-            layerDictionary = new Dictionary<bool, string>();
+            layer = Instantiate(layer, new Vector3(0, transform.position.y - 60, 0), Quaternion.identity);
 
-            LayerName = _layerName;
+            layer.SetActive(true);
 
-            Checkbox = _checkbox;
+            //layerDictionary = new Dictionary<bool, string>();
+
+            //LayerName = _layerName;
+
+            //Checkbox = _checkbox;
     }
-
-    private void InstantiateLayer()
-
-    {
-        layer = Instantiate(layer, new Vector3(0, transform.position.y-60, 0), Quaternion.identity);
-
-        layer.SetActive(true);
-    }
-
-
 }
