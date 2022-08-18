@@ -41,10 +41,10 @@ public class TestUiInfo : MonoBehaviour
 
 
 
-    void Update()
-    {
-        TextStart(_descriptionTestUIText);
-    }
+    //void Update()
+    //{
+    //    TextStart(_descriptionTestUIText);
+    //}
 
     public void TextStart(string _descriptionTestUIText)
     {

@@ -7,19 +7,19 @@ public class TestUiLayers : MonoBehaviour
 {
     [SerializeField] private GameObject layerPanel;
 
-    //[SerializeField] private GameObject layer;
+    [SerializeField] private GameObject newlayer;
 
     private List<Dictionary<bool, string>> _layerDictionaryList;
 
-    private Dictionary<bool, string> layerDictionary;
+    private Dictionary<bool, string> _layerDictionary;
 
     void Start()
     {
-        layerDictionary = TestInitLayer.layerDictionary;
-
         _layerDictionaryList = new List<Dictionary<bool, string>>();
 
-        _layerDictionaryList.Add(layerDictionary);
+        //layerDictionary = TestInitLayer.layerDictionary;
+
+        //_layerDictionaryList.Add(layerDictionary);
 
         //InstantiateLayer();
     }

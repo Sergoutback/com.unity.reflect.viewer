@@ -129,8 +129,6 @@ GameObject:
   - component: {fileID: 1923876688452566395}
   - component: {fileID: 7260097498521896723}
   - component: {fileID: 2304498530981866197}
-  - component: {fileID: 1049104348490660947}
-  - component: {fileID: 918677057}
   m_Layer: 5
   m_Name: InfoText
   m_TagString: Untagged
@@ -154,8 +152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -17.363, y: -36.8408}
-  m_SizeDelta: {x: 345.2739, y: 46.3185}
+  m_AnchoredPosition: {x: -123.50607, y: -42.9645}
+  m_SizeDelta: {x: 132.9878, y: 58.5657}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7260097498521896723
 CanvasRenderer:
@@ -187,10 +185,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 12
+    m_MinSize: 4
     m_MaxSize: 48
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -199,46 +197,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Info
---- !u!114 &1049104348490660947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754805047841394967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: -1
-  m_MinHeight: 100
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
---- !u!114 &918677057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754805047841394967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: -1
-  m_MinHeight: 100
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
 --- !u!1 &1820717365405394230
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,7 +566,7 @@ GameObject:
   - component: {fileID: 3316626942196877771}
   - component: {fileID: 3316626942196877765}
   m_Layer: 5
-  m_Name: FanOutButtons
+  m_Name: InfoPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1262,7 +1220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoPanel: {fileID: 7180849098697993684}
-  infoTestUIText: {fileID: 2304498530981866197}
   descriptionTestUIText: {fileID: 2134272607984896330}
   cancel_Button: {fileID: 3316626942934541472}
 --- !u!1 &7686365040671939091
