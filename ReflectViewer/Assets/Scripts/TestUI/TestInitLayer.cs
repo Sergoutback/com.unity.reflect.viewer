@@ -23,6 +23,8 @@ public class TestInitLayer : MonoBehaviour
     void LayerStartTest()
     {
         LayerStart(true, "TestLayer1");
+
+        Debug.Log("LayerStartTest");
     }
 
 

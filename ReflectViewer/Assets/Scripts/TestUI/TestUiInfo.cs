@@ -12,16 +12,34 @@ public class TestUiInfo : MonoBehaviour
     [SerializeField] private Button cancel_Button;
     
 
-    private string _infoTestUIText = ("Info");
+    private string _infoTestUIText;
 
-    private string _descriptionTestUIText = ("Description");
+    private string _descriptionTestUIText;
 
 
 
-    void Start()
+    [ContextMenu("TextTestTestTest")]
+
+    void TextTestTestTest()
     {
-        TextStart(_infoTestUIText, _descriptionTestUIText);
+        TextStart("infoTestTestTest", "descriptionTestTestTest");
+
+        Debug.Log("LayerStartTest infoTestTestTest descriptionTestTestTest");
     }
+
+    private void Start()
+    {
+         _infoTestUIText = ("Info");
+
+        _descriptionTestUIText = ("Description");
+    }
+
+
+
+    //void Update()
+    //{
+    //    TextStart(_infoTestUIText, _descriptionTestUIText);
+    //}
 
     public void TextStart(string _infoTestUIText, string _descriptionTestUIText)
     {
@@ -35,8 +53,8 @@ public class TestUiInfo : MonoBehaviour
         infoPanel.SetActive(false);
     }
 
-    public void ActivateInfoPanel()
-    {
-        infoPanel.SetActive(true);
-    }
+    //public void ActivateInfoPanel()
+    //{
+    //    infoPanel.SetActive(true);
+    //}
 }
