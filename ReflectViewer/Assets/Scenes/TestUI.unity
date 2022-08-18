@@ -4572,7 +4572,7 @@ PrefabInstance:
     - target: {fileID: 3099142277850629808, guid: 008d43be80a2fce47912355248c02ac0,
         type: 3}
       propertyPath: m_FontData.m_BestFit
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3099142277850629808, guid: 008d43be80a2fce47912355248c02ac0,
         type: 3}
@@ -9848,6 +9848,11 @@ PrefabInstance:
       propertyPath: m_NetworkingManager
       value: 
       objectReference: {fileID: 636137868}
+    - target: {fileID: 7092235235621593610, guid: 008d43be80a2fce47912355248c02ac0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7092235235621593611, guid: 008d43be80a2fce47912355248c02ac0,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -10727,6 +10732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Layer1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696163411080686270, guid: 008d43be80a2fce47912355248c02ac0,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7713978991565321671, guid: 008d43be80a2fce47912355248c02ac0,
         type: 3}
@@ -12885,7 +12895,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   layerPanel: {fileID: 984560544}
-  _layerName: 
+  layer: {fileID: 984560546}
+  _layerName: Test Name
+  _checkbox: 0
+--- !u!1 &984560546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2849029215122330367, guid: 008d43be80a2fce47912355248c02ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 984560526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1119551737
 GameObject:
   m_ObjectHideFlags: 0
