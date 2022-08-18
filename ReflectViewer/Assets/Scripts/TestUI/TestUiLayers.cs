@@ -15,7 +15,7 @@ public class TestUiLayers : MonoBehaviour
 
     void Start()
     {
-        _layerDictionaryList = new List<Dictionary<bool, string>>();
+        _layerDictionaryList = new List<Dictionary<bool, string>>(10);
 
         //layerDictionary = TestInitLayer.layerDictionary;
 

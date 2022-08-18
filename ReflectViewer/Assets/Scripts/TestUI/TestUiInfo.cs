@@ -18,7 +18,15 @@ public class TestUiInfo : MonoBehaviour
 
     void TextTest()
     {
-        TextStart("descriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTest");
+        TextStart("descriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTest" +
+            "" +
+            "descriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTest" +
+
+            "descriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTest" +
+            "" +
+            "descriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTest" +
+            "" +
+            "descriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTest");
 
         Debug.Log("TextTest descriptionTest");
     }
@@ -36,7 +44,7 @@ public class TestUiInfo : MonoBehaviour
 
     private void Start()
     {
-         _descriptionTestUIText = ("Description");
+        descriptionTestUIText.text = ("DescriptionFromScript");
     }
 
 
