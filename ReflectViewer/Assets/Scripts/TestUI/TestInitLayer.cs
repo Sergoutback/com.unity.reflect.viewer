@@ -6,11 +6,11 @@ public class TestInitLayer : MonoBehaviour
 {
     [SerializeField] private GameObject layer;
 
-    [SerializeField] private string _layerName;
+    private string _layerName;
 
-    [SerializeField] private bool _checkbox;
+    private bool _checkbox;
 
-    private Dictionary<bool, string> _layerDictionary;
+    public Dictionary<bool, string> layerDictionary;
 
     public string LayerName;
 
@@ -30,7 +30,9 @@ public class TestInitLayer : MonoBehaviour
 
     void Start()
     {
-        InstantiateLayer();
+        for (int i = 0; i < 5; i++)
+
+            InstantiateLayer();
     }
 
 
@@ -38,7 +40,7 @@ public class TestInitLayer : MonoBehaviour
     {
         if (_checkbox)
 
-            _layerDictionary = new Dictionary<bool, string>();
+            layerDictionary = new Dictionary<bool, string>();
 
             LayerName = _layerName;
 
@@ -48,7 +50,9 @@ public class TestInitLayer : MonoBehaviour
     private void InstantiateLayer()
 
     {
-        layer = Instantiate(layer, new Vector3(0, -60, 0), Quaternion.identity);
+        layer = Instantiate(layer, new Vector3(0, transform.position.y-60, 0), Quaternion.identity);
+
+        layer.SetActive(true);
     }
 
 

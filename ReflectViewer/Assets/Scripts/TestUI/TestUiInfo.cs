@@ -5,46 +5,49 @@ public class TestUiInfo : MonoBehaviour
 {
     [SerializeField] private GameObject infoPanel;
 
-    [SerializeField] private Text infoTestUIText;
-
     [SerializeField] private Text descriptionTestUIText;
 
     [SerializeField] private Button cancel_Button;
     
 
-    private string _infoTestUIText;
-
     private string _descriptionTestUIText;
 
 
 
-    [ContextMenu("TextTestTestTest")]
+    [ContextMenu("TextTest")]
 
-    void TextTestTestTest()
+    void TextTest()
     {
-        TextStart("infoTestTestTest", "descriptionTestTestTest");
+        TextStart("descriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTestdescriptionTest");
 
-        Debug.Log("LayerStartTest infoTestTestTest descriptionTestTestTest");
+        Debug.Log("TextTest descriptionTest");
     }
+
+    [ContextMenu("CancelTest")]
+
+    void CancelTest()
+    {
+        CancelButton();
+
+        Debug.Log("CancelTest");
+    }
+
+
 
     private void Start()
     {
-         _infoTestUIText = ("Info");
-
-        _descriptionTestUIText = ("Description");
+         _descriptionTestUIText = ("Description");
     }
 
 
 
-    //void Update()
-    //{
-    //    TextStart(_infoTestUIText, _descriptionTestUIText);
-    //}
-
-    public void TextStart(string _infoTestUIText, string _descriptionTestUIText)
+    void Update()
     {
-        infoTestUIText.text = _infoTestUIText;
+        TextStart(_descriptionTestUIText);
+    }
 
+    public void TextStart(string _descriptionTestUIText)
+    {
         descriptionTestUIText.text = _descriptionTestUIText;
     }
 
