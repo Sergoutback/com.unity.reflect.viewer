@@ -9,19 +9,21 @@ public class TestUiLayers : MonoBehaviour
 
     [SerializeField] private string _layerName;
 
-    private bool _checkbox;
+    [SerializeField] private bool _checkbox;
 
-    private Dictionary<string, bool> _layerDictionary;
+    private Dictionary<bool, string> _layerDictionary;
 
 
 
     void Start()
     {
-        LayerStart(_layerName, _checkbox);
+        LayerStart(_checkbox, _layerName);
     }
 
-    public void LayerStart(string _layersName, bool _checkbox)
+    public void LayerStart(bool _checkbox, string _layerName)
     {
-        _layerDictionary = new Dictionary<string, bool>();
+        if (_checkbox)
+
+            _layerDictionary = new Dictionary<bool, string>();
     }
 }
