@@ -3,31 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestUiLayers : MonoBehaviour
+namespace TestUi
 {
-    [SerializeField] private GameObject layerPanel;
 
-    [SerializeField] private GameObject newlayer;
-
-    private List<Dictionary<bool, string>> _layerDictionaryList;
-
-    private Dictionary<bool, string> _layerDictionary;
-
-    void Start()
+    public class TestUiLayers : MonoBehaviour
     {
-        _layerDictionaryList = new List<Dictionary<bool, string>>(10);
+        public GameObject layerPanel;
 
-    }
 
-    void AddNewLayer()
-    {
+        private List<Dictionary<bool, string>> _layerDictionaryList;
 
-        for (int i = 0; i < 10; i++)
+        private Dictionary<bool, string> _layerDictionary;
 
+
+        private GameObject _layerForDict;
+
+
+        public TestInitLayer newlayer;
+
+
+
+        void Start()
         {
-            if (newlayer)
+            _layerDictionaryList = new List<Dictionary<bool, string>>(10);
 
-                _layerDictionaryList.Add(_layerDictionary);
+            _layerDictionary = new Dictionary<bool, string>();
+
+            //AddNewLayer();
+
         }
+
+        //void AddNewLayer()
+        //{
+
+        //    for (int i = 0; i < 10; i++)
+
+        //    {
+        //        newlayer = GetComponent<TestInitLayer>();
+
+        //        newlayer.layer = Instantiate(_layerForDict);
+
+        //        //_layerDictionary = newlayer.Checkbox, newlayer.LayerName
+
+        //        //_layerDictionaryList.Add(_layerDictionary);
+        //    }
+        //}
     }
 }
