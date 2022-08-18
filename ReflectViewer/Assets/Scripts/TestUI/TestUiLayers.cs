@@ -7,6 +7,8 @@ public class TestUiLayers : MonoBehaviour
 {
     [SerializeField] private GameObject layerPanel;
 
+    [SerializeField] private GameObject layer;
+
     [SerializeField] private string _layerName;
 
     [SerializeField] private bool _checkbox;
@@ -18,6 +20,8 @@ public class TestUiLayers : MonoBehaviour
     void Start()
     {
         LayerStart(_checkbox, _layerName);
+
+        InstantiateLayer();
     }
 
     public void LayerStart(bool _checkbox, string _layerName)
@@ -25,5 +29,11 @@ public class TestUiLayers : MonoBehaviour
         if (_checkbox)
 
             _layerDictionary = new Dictionary<bool, string>();
+    }
+
+    private void InstantiateLayer()
+
+    {
+        layer = Instantiate(layer, new Vector3(0, -60, 0), Quaternion.identity);
     }
 }
