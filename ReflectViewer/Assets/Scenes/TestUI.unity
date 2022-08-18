@@ -5514,7 +5514,7 @@ PrefabInstance:
     - target: {fileID: 3817192450613837438, guid: 008d43be80a2fce47912355248c02ac0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3817192451207361172, guid: 008d43be80a2fce47912355248c02ac0,
         type: 3}
@@ -13011,14 +13011,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerPanel: {fileID: 984560544}
   layer: {fileID: 984560546}
-  _layerName: Test Name
-  _checkbox: 0
 --- !u!1 &984560546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2849029215122330367, guid: 008d43be80a2fce47912355248c02ac0,
     type: 3}
   m_PrefabInstance: {fileID: 984560526}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &984560547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984560544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e768e6f906833419dbc558f683bfb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer: {fileID: 984560546}
+  _layerName: 
+  _checkbox: 0
+  LayerName: 
+  Checkbox: 0
 --- !u!114 &984560548
 MonoBehaviour:
   m_ObjectHideFlags: 0

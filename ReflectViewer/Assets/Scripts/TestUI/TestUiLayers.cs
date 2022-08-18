@@ -9,31 +9,19 @@ public class TestUiLayers : MonoBehaviour
 
     [SerializeField] private GameObject layer;
 
-    [SerializeField] private string _layerName;
+    //private List<> _layerDictionaryList;
 
-    [SerializeField] private bool _checkbox;
-
-    private Dictionary<bool, string> _layerDictionary;
 
 
 
     void Start()
     {
-        LayerStart(_checkbox, _layerName);
+        //_layerDictionaryList.Add();
 
-        InstantiateLayer();
+        //InstantiateLayer();
     }
 
-    public void LayerStart(bool _checkbox, string _layerName)
-    {
-        if (_checkbox)
+    
 
-            _layerDictionary = new Dictionary<bool, string>();
-    }
 
-    private void InstantiateLayer()
-
-    {
-        layer = Instantiate(layer, new Vector3(0, -60, 0), Quaternion.identity);
-    }
 }

@@ -12,9 +12,9 @@ public class TestUiInfo : MonoBehaviour
     [SerializeField] private Button cancel_Button;
     
 
-    private string _infoTestUIText;
+    private string _infoTestUIText = ("Info");
 
-    private string _descriptionTestUIText;
+    private string _descriptionTestUIText = ("Description");
 
 
 
