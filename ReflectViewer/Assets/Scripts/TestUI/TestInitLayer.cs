@@ -25,7 +25,7 @@ namespace TestUi
 
         [ContextMenu("LayerStartTest")]
 
-        void LayerStartTest()
+        public void LayerStartTest()
         {
             for (int i = 0; i < 5; i++)
             {
